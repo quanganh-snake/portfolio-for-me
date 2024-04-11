@@ -1,0 +1,15 @@
+User-agent: *
+Disallow: /search
+Disallow: /search?*
+Disallow: /login
+# etc etc
+# Tác nhân người dùng có tên Sitemap không được phép thu thập dữ liệu trong mọi URL bắt đầu bằng
+Sitemap: https://yoursite/sitemap_index.xml
+
+# Google adsbot ignores robots.txt unless specifically named
+# This bot is used by Google to review landing pages for Google Ads
+# Be careful blocking pages for adsbot as doing so incorrectly can
+# mess up your Adwords Campaigns.
+User-Agent: AdsBot-Google
+Disallow: /search
+Disallow: /search?*
